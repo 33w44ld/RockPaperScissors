@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="gorny"><h1 id="nag">Wybrałeś tryb *Najlepszy z pięciu*. Wygrywa ten, który wygra 3 rundy. Powodzenia!!!</h1></div>
+
+    <div class="glowny">
+        <table>
+            <tr>
+                <th class="naglowek">Liczba rund</th>
+                <th class="naglowek">Gracz</th>
+                <th class="naglowek">Komputer</th>
+            </tr>
+            <tr>
+                <td class="komorka" id="k1">0</td>
+                <td class="komorka" id="k2">0</td>
+                <td class="komorka" id="k3">0</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="glowny2">
+        <table>
+            <tr>
+                <th><img src="images/nozyczki.png" id="nozyczki" alt="Nożyczki"></th>
+                <th><img src="images/kamien.png" id="kamien" alt="Kamień"></th>
+                <th><img src="images/papier.png" id="papier" alt="Papier"></th>
+            </tr>
+            <tr >
+                <td class="td2"><button class="wybor" id="przy1" onclick="akt(1)">Wybieram nożyczki</button></td>
+                <td class="td2"><button class="wybor" id="przy2" onclick="akt(2)">Wybieram kamień</button></td>
+                <td class="td2"><button class="wybor" id="przy3" onclick="akt(3)">Wybieram papier</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="ng" onclick="akt(0)">Nowa gra</button>
+    <a href="index.html"><button class="ng2" >Powrót</button></a>
+ 
+    <script src="srcipts/script-bo3.js"></script>
+
+</body>
+</html>
